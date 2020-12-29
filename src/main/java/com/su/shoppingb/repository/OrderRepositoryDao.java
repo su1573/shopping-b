@@ -1,6 +1,6 @@
 package com.su.shoppingb.repository;
 
-import com.su.shoppingb.domain.Order;
+import com.su.shoppingb.domain.OrderDetail;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -9,5 +9,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @Author: Mr.SU
  * @Description:
  */
-public interface OrderRepositoryDao extends JpaRepository<Order, Integer> {
+public interface OrderRepositoryDao extends JpaRepository<OrderDetail, Integer> {
 }

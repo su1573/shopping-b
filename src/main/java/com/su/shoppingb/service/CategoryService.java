@@ -14,5 +14,5 @@ import java.util.List;
 @Service
 public interface CategoryService {
 
-    List<Category> getAll();
+    Object getAll();
 }

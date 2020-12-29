@@ -6,6 +6,7 @@ import org.hibernate.annotations.Proxy;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
@@ -17,7 +18,7 @@ import java.math.BigDecimal;
 @Entity
 @Proxy(lazy = false) //设置懒加载方式
 @DynamicUpdate   //自动更新
-public class Order {
+public class OrderDetail {
     /** 订单id. */
     @Id
     @GeneratedValue
@@ -35,7 +36,7 @@ public class Order {
     /** 商品数量 */
     private Integer goodNum;
 
-    public Order() {
+    public OrderDetail() {
     }
 
     public Integer getOrderId() {
@@ -68,7 +69,7 @@ public class Order {
     public void setGoodNum(Integer goodNum) {
         this.goodNum = goodNum;
     }
-    public Order(Integer orderId, String goodName, BigDecimal goodPrice, String goodMainUrl, Integer goodNum) {
+    public OrderDetail(Integer orderId, String goodName, BigDecimal goodPrice, String goodMainUrl, Integer goodNum) {
         super();
         this.orderId = orderId;
         this.goodName = goodName;
@@ -76,7 +77,7 @@ public class Order {
         this.goodMainUrl = goodMainUrl;
         this.goodNum = goodNum;
     }
-    public Order(String goodName, BigDecimal goodPrice, String goodMainUrl, Integer goodNum) {
+    public OrderDetail(String goodName, BigDecimal goodPrice, String goodMainUrl, Integer goodNum) {
         super();
         this.goodName = goodName;
         this.goodPrice = goodPrice;

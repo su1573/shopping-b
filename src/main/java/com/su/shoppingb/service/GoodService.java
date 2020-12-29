@@ -19,4 +19,5 @@ public interface GoodService {
     List<GoodDTO> getAllEvent();
     List<GoodDTO> getTitle();
     List<Good> getAll();
+    Object order(String json);
 }

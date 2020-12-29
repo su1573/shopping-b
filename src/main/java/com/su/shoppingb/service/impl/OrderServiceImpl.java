@@ -1,6 +1,6 @@
 package com.su.shoppingb.service.impl;
 
-import com.su.shoppingb.domain.Order;
+import com.su.shoppingb.domain.OrderDetail;
 import com.su.shoppingb.repository.OrderRepositoryDao;
 import com.su.shoppingb.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ public class OrderServiceImpl implements OrderService {
     private OrderRepositoryDao orderRepositoryDao;
 
     @Override
-    public List<Order> getAll() {
+    public List<OrderDetail> getAll() {
         return orderRepositoryDao.findAll();
     }
 }

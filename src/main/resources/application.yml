@@ -21,10 +21,10 @@ mybatis:
 #  config-location: classpath:/application.yml
 
 
-logging:
-#  file: D:\java\Study_SpringBoot_Demo\log\my.log
-#  file:
-#    path: D:\java\Study_SpringBoot_Demo\log\
-  pattern:
-    console: "%d - %msg%n"
-  level: debug
+#logging:
+##  file: D:\java\Study_SpringBoot_Demo\log\my.log
+##  file:
+##    path: D:\java\Study_SpringBoot_Demo\log\
+#  pattern:
+#    console: "%d - %msg%n"
+#  level: debug

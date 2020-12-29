@@ -1,6 +1,6 @@
 package com.su.shoppingb.service;
 
-import com.su.shoppingb.domain.Order;
+import com.su.shoppingb.domain.OrderDetail;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,5 +14,5 @@ import java.util.List;
 @Service
 public interface OrderService {
 
-    List<Order> getAll();
+    List<OrderDetail> getAll();
 }
