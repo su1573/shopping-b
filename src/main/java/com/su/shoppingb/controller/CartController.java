@@ -40,7 +40,7 @@ public class CartController {
     * @Author: supenghui
     * @Date: 2020/12/29 18:54
     */
-    @PostMapping("/add")
+    @GetMapping("/add")
     public void add(Cart cart) {
         cartService.add(cart);
     }
